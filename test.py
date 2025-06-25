@@ -1,7 +1,8 @@
 import requests
 
 # Replace with the actual URL if running on a server or different port
-API_URL = "http://localhost:8000/ask"
+API_URL ="http://11.11.11.222:8060/question"
+
 
 # Example question
 # query = """MAGNETIC RESONANCE IMAGING REPORT

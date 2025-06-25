@@ -219,7 +219,7 @@ def ensure_vectorstore():
 
 
 # === API Endpoints ===
-@app.post("/ask")
+@app.post("/question")
 async def ask_question(query: str = Form(...)):
     try:
         print(f"🔍 Query received: {query}")
@@ -319,10 +319,10 @@ def debug_info():
 @app.get("/")
 def root():
     """Root endpoint with basic info"""
-    return {"message": "Medical RAG Assistant API", "endpoints": ["/ask", "/refresh", "/health", "/debug"]}
+    return {"message": "Medical RAG Assistant API", "endpoints": ["/question", "/refresh", "/health", "/debug"]}
 
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="11.11.11.222", port=8060)
